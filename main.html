@@ -7,7 +7,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-image: url('Sd_rR7rA.png'); /* Replace 'paws-background.jpg' with your actual image path */
+            background-image: url('Sd_rR7rA.png'); 
             background-size: cover;
             background-repeat: no-repeat;
             display: flex;
@@ -39,44 +39,66 @@
         .bio {
             margin-top: 10px;
         }
+        .bio-header {
+            font-family: "Helvetica Neue", Arial, sans-serif;
+            font-weight: bold;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
         .social-links {
             display: flex;
+            flex-direction: column; 
             margin-top: 20px;
         }
         .social-link {
-            width: 40px;
-            height: 40px;
-            margin-right: 10px;
+            width: 180px; 
+            height: 70px; 
+            margin-bottom: 10px;
             background-color: #fff;
             display: flex;
             align-items: center;
             justify-content: center;
-            border-radius: 5px;
+            border-radius: 10px;
             text-decoration: none;
             color: #000;
+            font-weight: bold;
+            font-size: 16px;
         }
         .social-link img {
-            max-width: 100%;
-            max-height: 100%;
+            max-width: 30px;
+            max-height: 30px;
+            margin-right: 10px;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 10px; /* Reduce padding for mobile */
+            }
+            .right-side {
+                margin-top: 10px; /* Reduce space between image and text for mobile */
+            }
+            .social-link {
+                width: 100%; /* Make the social links take the full width on mobile */
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="left-side">
-            <!-- Replace 'profile-image.jpg' with the path to your profile picture -->
             <img class="profile-image" src="7Q8A8771.jpg" alt="Profile Picture">
         </div>
         <div class="right-side">
             <div class="bio">
-                <p>A chubby tiger that still needs his diapers.</p>
+                <h2 class="bio-header">Astro the chubby diaper dork uwu</h2>
+                <p>23 | blue baby tiger | sysadmin</p>
             </div>
             <div class="social-links">
-                <!-- Replace '#' with the URLs to your social media profiles -->
-                <a class="social-link" href="https://bsky.app/profile/astro.lol" target="_blank"><img src="social-media-icon-1.png" alt="bsky"></a>
-                <a class="social-link" href="http://twitter.com/astronomytiger" target="_blank"><img src="social-media-icon-2.png" alt="twitter"></a>
-                <a class="social-link" href="http://tiktok.com/@astronomytiger" target="_blank"><img src="social-media-icon-3.png" alt="tiktok"></a>
-                <!-- Add more social links as needed -->
+                <a class="social-link" href="https://bsky.app/profile/astro.lol" target="_blank"><img src="8780-cloud-with-lightning.png" alt="bsky">bsky</a>
+                <a class="social-link" href="http://twitter.com/astronomytiger" target="_blank"><img src="1200px-Twitter_bird_logo_2012.svg.png" alt="twitter">twitter</a>
+                <a class="social-link" href="http://tiktok.com/@astronomytiger" target="_blank"><img src="4834215.png" alt="tiktok">tikok</a>
+                <a class="social-link" href="http://furaffinity.net/user/aestoru" target="_blank"><img src="free-furaffinity-3521439-2944883.png" alt="furaffinity">furaffinity</a>
+                <a class="social-link" href="https://www.youtube.com/channel/UC7p0KhQZBi4KxI4qe8Yj0VQ" target="_blank"><img src="1384060.png" alt="youtube">youtube</a>
+                <a class="social-link" href="https://www.instagram.com/astronomytiger" target="_blank"><img src="174855.png" alt="instagram">instagram</a>
             </div>
         </div>
     </div>
