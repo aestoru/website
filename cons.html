@@ -16,24 +16,34 @@
             justify-content: center;
             min-height: 100vh;
             margin: 0;
+            overflow-y: auto; /* Enable vertical scrolling for the entire page */
         }
         .container {
             max-width: 1000px;
             padding: 20px;
             background-color: rgba(255, 255, 255, 0.8);
+            /* Remove the fixed height */
         }
         .header {
             font-weight: bold;
             font-size: 32px;
             margin-bottom: 20px;
+            text-align: center;
+        }
+        .header2 {
+            font-weight: bold;
+            font-size: 22px;
+            margin-bottom: 20px;
+            text-align: center;
         }
         .text-box {
             width: 80%;
             max-width: 600px;
             margin: 0 auto;
-            padding: 20px;
+            padding: 10px;
             background-color: #fff;
             border-radius: 10px;
+            margin-bottom: 20px; /* Add space between text-boxes */
         }
         :root {
             --gold: rgb(0, 3, 194);
@@ -59,21 +69,68 @@
 <body>
     <div class="container">
         <div class="header">Astro's Convention Schedule</div>
-        <div class="text-box">
+        
+        <div class="header2">🚀2024🚀</div>
+        <div class="text-box"> 
             <p>
-                <span class="conventions">CONVENTIONS ATTENDED:</span><br>
-                🚀2018🚀 FurCon <span class="diamond">♢</span> BLFC <span class="diamond">♢</span> PAWCon <br>
-                🚀2019🚀 FurCon <span class="diamond">♢</span> BLFC <span class="diamond">♢</span> PAWCon <br>
-                🚀2020🚀 FurCon <span class="diamond">♢</span> HECKIN COVID-19 <br>
-                🚀2021🚀 BLFC🍕 <span class="diamond">♢</span> PAWCon <br>
-                🚀2022🚀 BLFC <span class="diamond">♢</span> PAWCon <br>
-                🚀2023🚀 ANW🍃 <span class="diamond">♢</span> FurCon <span class="diamond">♢</span> TFF <span class="diamond">♢</span> LVFC <span class="diamond">♢</span> TFS
+                ➡️ Anthro Northwest : Jan. 5 - 7<br>
+                ➡️ Further Confusion : Jan. 12 - 14<br>
+                ➡️ Las Vegas Fur Con : Mar. 29 - 31<br> 
             </p>
+        </div>
+        
+        <div class="header2">🚀2023🚀</div>
+        <div class="text-box"> 
             <p>
-                <span class="attendings">CONVENTIONS ATTENDING:</span><br>
-                <span class="diamond tick">♢</span> ✅ Megaplex : Sep. 15 - 17 <br>
-                <span class="diamond tick">♢</span> ✅ BabyFurCon : Oct. 6 - 9 <br>
-                <span class="diamond tick">♢</span> ✅ PawCon : Nov. 3 - 5
+                ✅ Anthro Northwest 🍃<br>
+                ✅ Further Confusion <br>
+                ✅ Texas Furry Fiesta <br>
+                ✅ Las Vegas Fur Con <br>
+                ✅ Texas Furry Siesta <br> 
+                ✅ Megaplex 🥜 <br>
+                ➡️ Baby Fur Con 🍼 : Oct. 6 - 9<br> 
+                ➡️ PAWCon : Nov. 3 - 5<br>
+            </p>
+        </div>
+
+        <div class="header2">🚀2022🚀</div>
+        <div class="text-box"> 
+            <p>
+                ✅ Biggest Little Fur Con<br>
+                ✅ PAWCon <br>
+            </p>
+        </div> 
+
+        <div class="header2">🚀2021🚀</div>
+        <div class="text-box"> 
+            <p>
+                ✅ Biggest Little Fur Con 🍕<br>
+                ✅ PAWCon <br>
+            </p>
+        </div>    
+
+        <div class="header2">🚀2020🚀</div>
+        <div class="text-box"> 
+            <p>
+                ✅ Further Confusion <br>
+            </p>
+        </div>
+
+        <div class="header2">🚀2019🚀</div>
+        <div class="text-box"> 
+            <p>
+                ✅ Further Confusion <br>
+                ✅ Biggest Little Fur Con <br>
+                ✅ PAWCon <br>
+            </p>
+        </div>
+
+        <div class="header2">🚀2018🚀</div>
+        <div class="text-box"> 
+            <p>
+                ✅ Further Confusion <br>
+                ✅ Biggest Little Fur Con <br>
+                ✅ PAWCon <br>
             </p>
         </div>
     </div>
