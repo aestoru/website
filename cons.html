@@ -3,138 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="dfbu88z-5d4b6086-ef65-4aa7-b4dd-938a6b048b54.png">
-    <title>Astro Con Schedule</title>
+    <link rel="icon" type="image/png" href="astroh.jpg">
+    <title>Astro's Convention Schedule</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-image: url('background.jpg'); 
-            background-size: cover;
-            background-repeat: no-repeat;
+            font-family: 'Poppins';
+            background: linear-gradient(to bottom, #379dfc 0%, white 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .schedule-container {
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 800px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .schedule-container h1 {
+            font-size: 26px;
+            color: 161616;
+            margin-bottom: 25px;
+           
+        }
+        .event {
             display: flex;
             align-items: center;
-            justify-content: center;
-            min-height: 100vh;
+            margin-bottom: 20px;
+        }
+        .event img {
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            margin-right: 15px;
+        }
+        .event-info {
+            flex: 1;
+        }
+        .event-info h2 {
+            font-size: 18px;
             margin: 0;
-            overflow-y: auto; /* Enable vertical scrolling for the entire page */
         }
-        .container {
-            max-width: 1000px;
-            padding: 20px;
-            background-color: rgba(255, 255, 255, 0.8);
-            /* Remove the fixed height */
+        .event-info p {
+            font-size: 14px;
+            margin: 0;
+            color: gray;
         }
-        .header {
-            font-weight: bold;
-            font-size: 32px;
-            margin-bottom: 20px;
-            text-align: center;
+        .event-date {
+            font-size: 14px;
+            margin: 0;
+            color: gray;
         }
-        .header2 {
-            font-weight: bold;
-            font-size: 22px;
-            margin-bottom: 20px;
-            text-align: center;
+        .attended {
+            background-color: #e0f2f1;
+            color: #00796b;
+            border: none;
+            border-radius: 90px;
+            padding: 5px 10px;
+            font-size: 12px;
+            margin-left: 10px;
         }
-        .text-box {
-            width: 80%;
-            max-width: 600px;
-            margin: 0 auto;
-            padding: 10px;
-            background-color: #fff;
-            border-radius: 10px;
-            margin-bottom: 20px; /* Add space between text-boxes */
-        }
-        :root {
-            --gold: rgb(0, 3, 194);
-        }
-
-        .conventions {
-            font-weight: bold;
-        }
-
-        .attendings {
-            font-weight: bold;
-        }
-
-        .diamond {
-            color: var(--gold);
-        }
-
-        .tick {
-            color: var(--gold);
+        .confirmed {
+            background-color: #c2e5fc;
+            color: #144afc;
+            border: none;
+            border-radius: 90px;
+            padding: 5px 10px;
+            font-size: 12px;
+            margin-left: 10px;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="header">Astro's Convention Schedule</div>
-        
-        <div class="header2">🚀2024🚀</div>
-        <div class="text-box"> 
-            <p>
-                ✅ Anthro Northwest : Jan. 5 - 7<br>
-                ✅ Further Confusion : Jan. 12 - 14<br>
-                ✅ Las Vegas Fur Con : Mar. 29 - 31<br>
-                ➡️ Megaplex : Aug. 29 - Sept. 1<br> 
-                ➡️ Baby Fur Con : Sept. 26 - 30<br>
-                ➡️ PAWCon : Nov. 8 -10<br>
-            </p>
+    <div class="schedule-container">
+        <h1>2024 Convention Schedule</h1>
+        <div class="event">
+            <img src="anw24.png" alt="Anthro Northwest">
+            <div class="event-info">
+                <h2>Anthro Northwest</h2>
+                <p>Seattle, WA, USA</p>
+            </div>
+            <div class="event-date">January 5-7</div>
+            <button class="attended">Attended</button>
         </div>
-        
-        <div class="header2">🚀2023🚀</div>
-        <div class="text-box"> 
-            <p>
-                ✅ Anthro Northwest 🍃<br>
-                ✅ Further Confusion <br>
-                ✅ Texas Furry Fiesta <br>
-                ✅ Las Vegas Fur Con <br>
-                ✅ Texas Furry Siesta <br> 
-                ✅ Megaplex 🥜 <br>
-                ✅ Baby Fur Con 🍼 <br> 
-                ✅ PAWCon <br>
-            </p>
+        <div class="event">
+            <img src="fc24.png" alt="Futher Confusion">
+            <div class="event-info">
+                <h2>Futher Confusion</h2>
+                <p>San Jose, CA, USA</p>
+            </div>
+            <div class="event-date">January 12-14</div>
+            <button class="attended">Attended</button>
         </div>
-
-        <div class="header2">🚀2022🚀</div>
-        <div class="text-box"> 
-            <p>
-                ✅ Biggest Little Fur Con<br>
-                ✅ PAWCon <br>
-            </p>
-        </div> 
-
-        <div class="header2">🚀2021🚀</div>
-        <div class="text-box"> 
-            <p>
-                ✅ Biggest Little Fur Con 🍕<br>
-                ✅ PAWCon <br>
-            </p>
-        </div>    
-
-        <div class="header2">🚀2020🚀</div>
-        <div class="text-box"> 
-            <p>
-                ✅ Further Confusion <br>
-            </p>
+        <div class="event">
+            <img src="lvfc24.png" alt="LVFC24">
+            <div class="event-info">
+                <h2>Las Vegas Fur Con</h2>
+                <p>Las Vegas, NV, USA</p>
+            </div>
+            <div class="event-date">March 29-31</div>
+            <button class="attended">Attended</button>
         </div>
-
-        <div class="header2">🚀2019🚀</div>
-        <div class="text-box"> 
-            <p>
-                ✅ Further Confusion <br>
-                ✅ Biggest Little Fur Con <br>
-                ✅ PAWCon <br>
-            </p>
+        <div class="event">
+            <img src="mega24.png" alt="Megaplex">
+            <div class="event-info">
+                <h2>Megaplex</h2>
+                <p>Orlando, FL, USA</p>
+            </div>
+            <div class="event-date">March 14-17</div>
+            <button class="confirmed">Confirmed</button>
         </div>
-
-        <div class="header2">🚀2018🚀</div>
-        <div class="text-box"> 
-            <p>
-                ✅ Further Confusion <br>
-                ✅ Biggest Little Fur Con <br>
-                ✅ PAWCon <br>
-            </p>
+        <div class="event">
+            <img src="bfc24.png" alt="Baby Fur Con">
+            <div class="event-info">
+                <h2>Baby Fur Con</h2>
+                <p>Santa Cruz, CA, USA</p>
+            </div>
+            <div class="event-date">September 26-30</div>
+            <button class="confirmed">Confirmed</button>
+        </div>
+        <div class="event">
+            <img src="paw24.png" alt="PawCon">
+            <div class="event-info">
+                <h2>PAWCon</h2>
+                <p>San Jose, CA, USA</p>
+            </div>
+            <div class="event-date">November 8-10</div>
+            <button class="confirmed">Confirmed</button>
         </div>
     </div>
 </body>
