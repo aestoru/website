@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -57,27 +57,27 @@
             color: gray;
         }
         .event-date {
-           display: flex;
-           flex-direction: column;
-           align-items: flex-end;
-        }
-        .event-date p {
             font-size: 14px;
             margin: 0;
             color: gray;
         }
-        .attended, 
-        .confirmed {
+        .attended {
             background-color: #dcfce7;
             color: #15803d;
             border: none;
             border-radius: 90px;
             padding: 5px 10px;
             font-size: 12px;
+            margin-left: 10px;
         }
         .confirmed {
             background-color: #dbeafe;
             color: #144afc;
+            border: none;
+            border-radius: 90px;
+            padding: 5px 10px;
+            font-size: 12px;
+            margin-left: 10px;
         }
         @media (max-width: 700px) {
             .schedule-container h1 {
@@ -86,14 +86,11 @@
             .event-info h2 {
                 font-size: 14px;
             }
-            .event-date p,
             .event-info p {
                 font-size: 12px; 
             }
-            .attended,
-            .confirmed {
-                font-size: 10px;
-                padding: 4px 8px;
+            .event-date {
+                display: none;
             }
         }
     </style>
@@ -107,10 +104,8 @@
                 <h2>Anthro Northwest</h2>
                 <p>Seattle, WA, USA</p>
             </div>
-            <div class="event-date">
-                <p>January 5-7</p>
-                <span class="attended">Attended</span>
-            </div>
+            <div class="event-date">January 5-7</div>
+            <button class="attended">Attended</button>
         </div>
         <div class="event">
             <img src="fc24.png" alt="Futher Confusion">
@@ -118,10 +113,8 @@
                 <h2>Futher Confusion</h2>
                 <p>San Jose, CA, USA</p>
             </div>
-            <div class="event-date">
-                <p>January 12-14</p>
-                <span class="attended">Attended</span>
-            </div>
+            <div class="event-date">January 12-14</div>
+            <button class="attended">Attended</button>
         </div>
         <div class="event">
             <img src="lvfc24.png" alt="LVFC24">
@@ -129,10 +122,8 @@
                 <h2>Las Vegas Fur Con</h2>
                 <p>Las Vegas, NV, USA</p>
             </div>
-            <div class="event-date">
-                <p>March 29-31</p>
-                <span class="attended">Attended</span>
-            </div>
+            <div class="event-date">March 29-31</div>
+            <button class="attended">Attended</button>
         </div>
         <div class="event">
             <img src="mega24.png" alt="Megaplex">
@@ -140,10 +131,8 @@
                 <h2>Megaplex</h2>
                 <p>Orlando, FL, USA</p>
             </div>
-            <div class="event-date">
-                <p>March 14-17</p>
-                <span class="confirmed">Confirmed</span>
-            </div>
+            <div class="event-date">March 14-17</div>
+            <button class="confirmed">Confirmed</button>
         </div>
         <div class="event">
             <img src="bfc24.png" alt="Baby Fur Con">
@@ -151,10 +140,8 @@
                 <h2>Baby Fur Con</h2>
                 <p>Santa Cruz, CA, USA</p>
             </div>
-             <div class="event-date">
-                <p>September 26-30</p>
-                <span class="confirmed">Confirmed</span>
-            </div>
+            <div class="event-date">September 26-30</div>
+            <button class="confirmed">Confirmed</button>
         </div>
         <div class="event">
             <img src="paw24.png" alt="PawCon">
@@ -162,10 +149,8 @@
                 <h2>PAWCon</h2>
                 <p>San Jose, CA, USA</p>
             </div>
-            <div class="event-date">
-                <p>November 8-10</p>
-                <span class="confirmed">Confirmed</span>
-            </div>
+            <div class="event-date">November 8-10</div>
+            <button class="confirmed">Confirmed</button>
         </div>
     </div>
 </body>
