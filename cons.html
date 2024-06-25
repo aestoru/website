@@ -8,15 +8,59 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Poppins', san-serif;
+            font-family: 'Poppins';
             background: linear-gradient(to bottom, #379dfc 0%, white 100%);
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
             height: 100vh;
             margin: 0;
             padding: 20px;
             box-sizing: border-box;
+        }
+        .upnext-container{
+            border-radius: 20px;
+            background-image: url(astronext.jpg);
+            background-size: cover;
+            background-origin: border-box;
+            background-repeat: no-repeat;
+            background-position: right center;
+            margin-top: 16px;
+            margin-bottom: 16px;
+            width: 100%;
+            max-width: 800px;
+            display: flex;
+            display: block;
+            padding-bottom: 28px;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+        .upnext-label {
+            text-transform: uppercase;
+            background-color: white;
+            padding: 12px 16px;
+            font-weight: bold;
+            display: inline-block;
+            font-size: 20px;
+            margin-left: 16px;
+            position: relative;
+            z-index: 1;
+        }
+        .upnext-name {
+            font-size: 62px;
+            color: white;
+            margin-left: 16px;
+            margin-top: 24px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            margin-bottom: 2px;
+        }
+        .upnext-details {
+            color: white;
+            margin-left: 16px;
+            background-color: rgba (255, 255, 255, 0.85);
+            padding: 8px;
+            display: inline-block;
+            font-size: 18px;
         }
         .schedule-container {
             background-color: white;
@@ -66,20 +110,47 @@
             margin: 0;
             color: gray;
         }
-        .attended, 
-        .confirmed {
-            background-color: #dcfce7;
-            color: #15803d;
+        .status {
             border: none;
             border-radius: 90px;
             padding: 5px 10px;
             font-size: 12px;
         }
+        .attended {
+            background-color: #dcfce7;
+            color: #15803d;
+        }
         .confirmed {
             background-color: #dbeafe;
             color: #144afc;
         }
+        .planning {
+            background-color: #fef08a;
+            color: #854d0e;
+        }
         @media (max-width: 700px) {
+            .upnext-container {
+                position: relative;
+            }
+            .upnext-container::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                border-radius: inherit;
+                background-image: inherit;
+                background-size: inherit;
+                background-position: inherit;
+                background-repeat: inherit;
+                filter: blur(2px);
+                z-index: 0;
+            }
+            .upnext-container > * {
+                position: relative;
+                z-index: 1;
+            }
             .schedule-container h1 {
                 font-size: 20px;
             }
@@ -99,6 +170,13 @@
     </style>
 </head>
 <body>
+    <div class="upnext-container" id="upnext">
+        <div>
+            <span class="upnext-label">Up Next</span>
+            <h1 class="upnext-name" id="con-name">Megaplex</h1>
+            <p class="upnext-details">March 14-17 | Orlando, FL, USA</p>
+        </div>
+    </div>
     <div class="schedule-container">
         <h1>2024 Convention Schedule</h1>
         <div class="event">
@@ -109,7 +187,7 @@
             </div>
             <div class="event-date">
                 <p>January 5-7</p>
-                <span class="attended">Attended</span>
+                <span class="status attended">Attended</span>
             </div>
         </div>
         <div class="event">
@@ -120,7 +198,7 @@
             </div>
             <div class="event-date">
                 <p>January 12-14</p>
-                <span class="attended">Attended</span>
+                <span class="status attended">Attended</span>
             </div>
         </div>
         <div class="event">
@@ -131,7 +209,7 @@
             </div>
             <div class="event-date">
                 <p>March 29-31</p>
-                <span class="attended">Attended</span>
+                <span class="status attended">Attended</span>
             </div>
         </div>
         <div class="event">
@@ -142,7 +220,7 @@
             </div>
             <div class="event-date">
                 <p>March 14-17</p>
-                <span class="confirmed">Confirmed</span>
+                <span class="status confirmed">Confirmed</span>
             </div>
         </div>
         <div class="event">
@@ -153,7 +231,7 @@
             </div>
              <div class="event-date">
                 <p>September 26-30</p>
-                <span class="confirmed">Confirmed</span>
+                <span class="status confirmed">Confirmed</span>
             </div>
         </div>
         <div class="event">
@@ -164,7 +242,7 @@
             </div>
             <div class="event-date">
                 <p>November 8-10</p>
-                <span class="confirmed">Confirmed</span>
+                <span class="status confirmed">Confirmed</span>
             </div>
         </div>
     </div>
