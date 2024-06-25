@@ -7,9 +7,15 @@
     <title>Astro's Convention Schedule</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
         body {
             font-family: 'Poppins';
             background: linear-gradient(to bottom, #379dfc 0%, white 100%);
+            background-attachment: fixed;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -52,7 +58,7 @@
             margin-left: 16px;
             margin-top: 24px;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-            margin-bottom: 2px;
+            margin-bottom: -4px;
         }
         .upnext-details {
             color: white;
@@ -146,6 +152,9 @@
                 background-repeat: inherit;
                 filter: blur(2px);
                 z-index: 0;
+            }
+            .upnext-name {
+                margin-bottom: -14px;
             }
             .upnext-container > * {
                 position: relative;
