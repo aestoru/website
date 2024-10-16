@@ -136,6 +136,38 @@
             background-color: #fef08a;
             color: #854d0e;
         }
+         .attended-container {
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 800px;
+            padding: 20px;
+            box-sizing: border-box;
+            margin-top: 30px;
+        }
+        .attended-container h2 {
+            font-size: 24px;
+            color: #161616;
+            margin-bottom: 15px;
+        }
+        .attended-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .attended-list li {
+            font-size: 16px;
+            margin-bottom: 8px;
+            color: #161616;
+            display: flex;
+            justify-content: space-between;
+        }
+        .year {
+            font-weight: bold;
+            color: #379dfc;
+        }
+
         @media (max-width: 700px) {
             .upnext-container {
                 position: relative;
@@ -176,6 +208,12 @@
             .confirmed {
                 font-size: 10px;
                 padding: 4px 8px;
+            }
+            .attended-container h2 {
+                font-size: 20px;
+            }
+            .attended-list li {
+                font-size: 14px;
             }
         }
     </style>
@@ -267,6 +305,20 @@
                 <span class="status confirmed">Confirmed</span>
             </div>
         </div>
+    </div>
+    <div class="attended-container">
+        <h2>Previous Conventions</h2>
+        <ul class="attended-list">
+            <li><span>Anthro Northwest</span><span class="year">2023</span></li>
+            <li><span>Further Confusion</span><span class="year">2018, 2019, 2020, 2023</span></li>
+            <li><span>Texas Furry Fiesta</span><span class="year">2023</span></li>
+            <li><span>Las Vegas Fur Con</span><span class="year">2023</span></li>
+            <li><span>Texas Furry Siesta</span><span class="year">2023</span></li>
+            <li><span>Megaplex</span><span class="year">2023</span></li>
+            <li><span>Baby Fur Con</span><span class="year">2023</span></li>
+            <li><span>PAWCon</span><span class="year">2018, 2019, 2021, 2022, 2023</span></li>
+            <li><span>Biggest Little Fur Con</span><span class="year">2018, 2019, 2021, 2022</span></li>
+        </ul>
     </div>
 </body>
 </html>
