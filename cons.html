@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="astroh.jpg">
+    <link rel="icon" type="image/png" href="astroh.png">
     <title>Astro's Convention Schedule</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <style>
@@ -77,6 +77,7 @@
             max-width: 800px;
             padding: 20px;
             box-sizing: border-box;
+            margin-bottom: 16px;
             padding-bottom: 28px;
         }
         .schedule-container h1 {
@@ -144,9 +145,10 @@
             max-width: 800px;
             padding: 20px;
             box-sizing: border-box;
-            margin-top: 30px;
+            margin-bottom: 16px;
+            padding-bottom: 28px;
         }
-        .attended-container h2 {
+        .attended-container h1 {
             font-size: 24px;
             color: #161616;
             margin-bottom: 15px;
@@ -166,6 +168,28 @@
         .year {
             font-weight: bold;
             color: #379dfc;
+        }
+        .planning-container {
+            background-color: #fef08a;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 800px;
+            padding: 20px;
+            box-sizing: border-box;
+            margin-bottom: 16px;
+            padding-bottom: 28px;
+        }
+        .planning-container h1 {
+            font-size: 24px;
+            color: #854d0e;
+            margin-bottom: 15px;
+        }
+        .planning-container h2{
+            font-size: 16px;
+            margin-bottom: 8px;
+            color: #854d0e;
+            display: flex;
         }
 
         @media (max-width: 700px) {
@@ -209,10 +233,16 @@
                 font-size: 10px;
                 padding: 4px 8px;
             }
-            .attended-container h2 {
+            .attended-container h1 {
                 font-size: 20px;
             }
             .attended-list li {
+                font-size: 14px;
+            }
+            .planning-container h1 {
+                font-size: 20px;
+            }
+            .planning-container h2 {
                 font-size: 14px;
             }
         }
@@ -222,32 +252,25 @@
     <div class="upnext-container" id="upnext">
         <div>
             <span class="upnext-label">Up Next</span>
-            <h1 class="upnext-name" id="con-name">PAWCon</h1>
-            <p class="upnext-details">November 8-11 | San Jose, CA, USA</p>
+            <h1 class="upnext-name" id="con-name">Further Confusion</h1>
+            <p class="upnext-details">January 16-20 | San Jose, CA, USA</p>
         </div>
     </div>
+    <div class="planning-container">
+        <h1>Pssst Planning...</h1>
+        <h2>Conventions marked as "Planning" means that the Skunk and Cat are looking for a room. Please do not hesitate to contact Astro if you would like the two of us to room with you!</h2>
+    </div>
     <div class="schedule-container">
-        <h1>2024 Convention Schedule</h1>
+        <h1>2025 Convention Schedule</h1>
         <div class="event">
-            <img src="anw24.png" alt="Anthro Northwest">
-            <div class="event-info">
-                <h2>Anthro Northwest</h2>
-                <p>Seattle, WA, USA</p>
-            </div>
-            <div class="event-date">
-                <p>January 5-7</p>
-                <span class="status attended">Attended</span>
-            </div>
-        </div>
-        <div class="event">
-            <img src="fc24.png" alt="Futher Confusion">
+            <img src="FCLogo.png" alt="Futher Confusion">
             <div class="event-info">
                 <h2>Futher Confusion</h2>
                 <p>San Jose, CA, USA</p>
             </div>
             <div class="event-date">
-                <p>January 12-14</p>
-                <span class="status attended">Attended</span>
+                <p>January 16-20</p>
+                <span class="status confirmed">Confirmed</span>
             </div>
         </div>
         <div class="event">
@@ -257,67 +280,45 @@
                 <p>Las Vegas, NV, USA</p>
             </div>
             <div class="event-date">
-                <p>March 29-31</p>
-                <span class="status attended">Attended</span>
+                <p>April 17-20</p>
+                <span class="status planning">Planning</span>
             </div>
         </div>
         <div class="event">
-            <img src="mega24.png" alt="Megaplex">
+            <img src="anthrocon.png" alt="Anthrocon">
             <div class="event-info">
-                <h2>Megaplex</h2>
-                <p>Orlando, FL, USA</p>
+                <h2>Anthrocon</h2>
+                <p>Pittsburgh, PA, USA</p>
             </div>
             <div class="event-date">
-                <p>August 29-31</p>
-                <span class="status attended">Attended</span>
+                <p>July 3-6</p>
+                <span class="status confirmed">Confirmed</span>
             </div>
         </div>
         <div class="event">
-            <img src="bfc24.png" alt="Baby Fur Con">
-            <div class="event-info">
-                <h2>Baby Fur Con</h2>
-                <p>Santa Cruz, CA, USA</p>
-            </div>
-             <div class="event-date">
-                <p>September 26-30</p>
-                <span class="status attended">Attended</span>
-            </div>
-        </div>
-        <div class="event">
-            <img src="chip_512.png" alt="Biggest Little Fur Con">
-            <div class="event-info">
-                <h2>Biggest Little Fur Con</h2>
-                <p>Reno, NV, USA</p>
-            </div>
-             <div class="event-date">
-                <p>October 14-18</p>
-                <span class="status attended">Attended</span>
-            </div>
-        </div>
-        <div class="event">
-            <img src="paw24.png" alt="PawCon">
+            <img src="paw25.png" alt="PawCon">
             <div class="event-info">
                 <h2>PAWCon</h2>
                 <p>San Jose, CA, USA</p>
             </div>
             <div class="event-date">
-                <p>November 8-10</p>
-                <span class="status attended">Attended</span>
+                <p>November 7-9</p>
+                <span class="status planning">Planning</span>
             </div>
         </div>
     </div>
     <div class="attended-container">
-        <h2>Previous Conventions</h2>
+        <h1>Previous Conventions</h1>
         <ul class="attended-list">
-            <li><span>Anthro Northwest</span><span class="year">2023</span></li>
-            <li><span>Further Confusion</span><span class="year">2018, 2019, 2020, 2023</span></li>
+            <li><span>Anthro Northwest</span><span class="year">2023, 2024</span></li>
+            <li><span>Further Confusion</span><span class="year">2018, 2019, 2020, 2023, 2024</span></li>
             <li><span>Texas Furry Fiesta</span><span class="year">2023</span></li>
-            <li><span>Las Vegas Fur Con</span><span class="year">2023</span></li>
+            <li><span>Las Vegas Fur Con</span><span class="year">2023, 2024</span></li>
             <li><span>Texas Furry Siesta</span><span class="year">2023</span></li>
-            <li><span>Megaplex</span><span class="year">2023</span></li>
-            <li><span>Baby Fur Con</span><span class="year">2023</span></li>
-            <li><span>PAWCon</span><span class="year">2018, 2019, 2021, 2022, 2023</span></li>
-            <li><span>Biggest Little Fur Con</span><span class="year">2018, 2019, 2021, 2022</span></li>
+            <li><span>Megaplex</span><span class="year">2023, 2024</span></li>
+            <li><span>Baby Fur Con</span><span class="year">2023, 2024</span></li>
+            <li><span>Biggest Little Fur Con</span><span class="year">2018, 2019, 2021, 2022, 2024</span></li>
+            <li><span>PAWCon</span><span class="year">2018, 2019, 2021, 2022, 2023, 2024</span></li>
         </ul>
     </div>
 </body>
