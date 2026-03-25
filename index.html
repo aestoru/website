@@ -20,7 +20,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh;
             margin: 0;
             padding: 20px;
             box-sizing: border-box;
@@ -63,27 +63,26 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: white; /* White background to look like a container */
+            background-color: white;
             border-radius: 20px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             width: 100%;
-            max-width: 800px; /* Restrict max-width */
-            padding: 20px; /* Adjust padding for a more compact look */
+            max-width: 800px;
+            padding: 20px;
             text-align: center;
-            font-size: 24px; /* Make the text bigger */
+            font-size: 24px;
             font-weight: 600;
-            color: #161616; /* Text color */
-            text-decoration: none; /* Remove underline from the link */
+            color: #161616;
+            text-decoration: none;
             box-sizing: border-box;
+            margin-bottom: 16px;
         }
-
         .big-button img {
-            width: 40px; /* Adjust the size of the icon */
+            width: 40px;
             height: 40px;
             margin-right: 15px;
             border-radius: 50%;
         }
-
         .social-container {
             background-color: white;
             border-radius: 20px;
@@ -92,12 +91,7 @@
             max-width: 800px;
             padding: 20px;
             box-sizing: border-box;
-            margin: 20px 0;
-        }
-        .social-container h1 {
-            font-size: 26px;
-            color: #161616;
-            margin-bottom: 25px;
+            margin: 20px 0 16px 0;
         }
         .social-links {
             display: flex;
@@ -123,6 +117,95 @@
         }
         .social-link:hover {
             background-color: #dbeafe;
+        }
+        .planning-container {
+            background-color: #fef08a;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 800px;
+            padding: 20px;
+            box-sizing: border-box;
+            margin-bottom: 16px;
+            padding-bottom: 28px;
+        }
+        .planning-container h1 {
+            font-size: 24px;
+            color: #854d0e;
+            margin-bottom: 15px;
+        }
+        .planning-container h2 {
+            font-size: 16px;
+            margin-bottom: 8px;
+            color: #854d0e;
+            display: flex;
+        }
+        .schedule-container {
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 800px;
+            padding: 20px;
+            box-sizing: border-box;
+            margin-bottom: 16px;
+            padding-bottom: 28px;
+        }
+        .schedule-container h1 {
+            font-size: 26px;
+            color: #161616;
+            margin-bottom: 25px;
+        }
+        .event {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .event img {
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            margin-right: 15px;
+        }
+        .event-info {
+            flex: 1;
+        }
+        .event-info h2 {
+            font-size: 18px;
+            margin: 0;
+        }
+        .event-info p {
+            font-size: 14px;
+            margin: 0;
+            color: gray;
+        }
+        .event-date {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+        .event-date p {
+            font-size: 14px;
+            margin: 0;
+            color: gray;
+        }
+        .status {
+            border: none;
+            border-radius: 90px;
+            padding: 5px 10px;
+            font-size: 12px;
+        }
+        .attended {
+            background-color: #dcfce7;
+            color: #15803d;
+        }
+        .confirmed {
+            background-color: #dbeafe;
+            color: #144afc;
+        }
+        .planning {
+            background-color: #fef08a;
+            color: #854d0e;
         }
         .bottom-text h1 {
             font-size: 16px;
@@ -153,15 +236,34 @@
                 position: relative;
                 z-index: 1;
             }
-            .social-container h1 {
-                font-size: 22px;
-            }
             .social-link {
                 padding: 8px 16px;
             }
             .social-link img {
                 width: 24px;
                 height: 24px;
+            }
+            .schedule-container h1 {
+                font-size: 20px;
+            }
+            .event-info h2 {
+                font-size: 14px;
+            }
+            .event-date p,
+            .event-info p {
+                font-size: 12px;
+            }
+            .attended,
+            .confirmed,
+            .planning {
+                font-size: 10px;
+                padding: 4px 8px;
+            }
+            .planning-container h1 {
+                font-size: 20px;
+            }
+            .planning-container h2 {
+                font-size: 14px;
             }
         }
     </style>
@@ -174,19 +276,12 @@
         </div>
     </div>
 
-    <!-- Con Schedule Button -->
-    <a class="big-button" href="cons.html">
-        <img src="dfbu88z-5d4b6086-ef65-4aa7-b4dd-938a6b048b54.png" alt="Con Schedule">
-        Con Schedule
-    </a>
-
-    <!-- Social Links Container -->
     <div class="social-container">
         <div class="social-links">
             <a class="social-link" href="https://bsky.app/profile/astro.gay" target="_blank">
                 <img src="8780-cloud-with-lightning.png" alt="Bsky">Bsky
             </a>
-            <a class="social-link" href="http://tiktok.com/@astronomytiger" target="_blank">
+            <a class="social-link" href="https://tiktok.com/@astronomytiger" target="_blank">
                 <img src="4834215.png" alt="Tiktok">Tiktok
             </a>
             <a class="social-link" href="http://furaffinity.net/user/aestoru" target="_blank">
@@ -197,6 +292,82 @@
             </a>
         </div>
     </div>
+
+    <a class="big-button" href="cons.html">
+        <img src="dfbu88z-5d4b6086-ef65-4aa7-b4dd-938a6b048b54.png" alt="Con Schedule">
+        Con Schedule
+    </a>
+
+    <div class="schedule-container">
+        <h1>2026 Convention Schedule</h1>
+        <div class="event">
+            <img src="FCLogo.png" alt="Further Confusion">
+            <div class="event-info">
+                <h2>Further Confusion</h2>
+                <p>San Jose, CA, USA</p>
+            </div>
+            <div class="event-date">
+                <p>January 15-19</p>
+                <span class="status attended">Attended</span>
+            </div>
+        </div>
+        <div class="event">
+            <img src="lvfc24.png" alt="Las Vegas Fur Con">
+            <div class="event-info">
+                <h2>Las Vegas Fur Con</h2>
+                <p>Las Vegas, NV, USA</p>
+            </div>
+            <div class="event-date">
+                <p>April 2-5</p>
+                <span class="status confirmed">Confirmed</span>
+            </div>
+        </div>
+        <div class="event">
+            <img src="anthrocon.png" alt="Anthrocon">
+            <div class="event-info">
+                <h2>Anthrocon</h2>
+                <p>Pittsburgh, PA, USA</p>
+            </div>
+            <div class="event-date">
+                <p>July 2-5</p>
+                <span class="status confirmed">Confirmed</span>
+            </div>
+        </div>
+        <div class="event">
+            <img src="mega24.png" alt="Megaplex">
+            <div class="event-info">
+                <h2>Megaplex</h2>
+                <p>Orlando, FL, USA</p>
+            </div>
+            <div class="event-date">
+                <p>Aug. 21-23</p>
+                <span class="status planning">Planning</span>
+            </div>
+        </div>
+        <div class="event">
+            <img src="bfc24.png" alt="Baby Fur Con">
+            <div class="event-info">
+                <h2>Baby Fur Con</h2>
+                <p>California, USA</p>
+            </div>
+            <div class="event-date">
+                <p>September</p>
+                <span class="status confirmed">Confirmed</span>
+            </div>
+        </div>
+        <div class="event">
+            <img src="paw25.png" alt="PawCon">
+            <div class="event-info">
+                <h2>PAWCon</h2>
+                <p>San Jose, CA, USA</p>
+            </div>
+            <div class="event-date">
+                <p>November</p>
+                <span class="status planning">Planning</span>
+            </div>
+        </div>
+    </div>
+
     <div class="bottom-text">
         <h1>AstroMedia LLC</h1>
     </div>
