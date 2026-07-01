@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="theme-color" content="#379dfc">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="astroh.png">
     <title>Astro's Website</title>
@@ -13,6 +14,7 @@
             padding: 0;
             padding-bottom: 30px;
         }
+
         body {
             font-family: 'Poppins';
             background: linear-gradient(to bottom, #379dfc 0%, white 100%);
@@ -26,6 +28,7 @@
             box-sizing: border-box;
             padding-bottom: 30px;
         }
+
         .portrait-container {
             border-radius: 20px;
             background-image: url(nakedastro.jpeg);
@@ -46,6 +49,7 @@
             box-sizing: border-box;
             overflow: hidden;
         }
+
         .portrait-name {
             font-size: 62px;
             color: white;
@@ -54,6 +58,7 @@
             margin-bottom: -24px;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
+
         .portrait-details {
             color: white;
             margin-left: 16px;
@@ -62,6 +67,7 @@
             display: inline-block;
             font-size: 20px;
         }
+
         .bio-container {
             background-color: #d7e2ee;
             border: 1px solid rgba(30, 58, 95, 0.12);
@@ -75,18 +81,19 @@
             padding-bottom: 28px;
         }
 
-        .bio-container h1 {
-            font-size: 24px;
-            color: #1e3a5f;
-            margin-bottom: 15px;
-        }
+            .bio-container h1 {
+                font-size: 24px;
+                color: #1e3a5f;
+                margin-bottom: 15px;
+            }
 
-        .bio-container p {
-            font-size: 16px;
-            color: #2458a6;
-            line-height: 1.6;
-            margin: 0;
-        }
+            .bio-container p {
+                font-size: 16px;
+                color: #2458a6;
+                line-height: 1.6;
+                margin: 0;
+            }
+
         .big-button {
             display: flex;
             justify-content: center;
@@ -105,12 +112,14 @@
             box-sizing: border-box;
             margin-bottom: 16px;
         }
-        .big-button img {
-            width: 40px;
-            height: 40px;
-            margin-right: 15px;
-            border-radius: 50%;
-        }
+
+            .big-button img {
+                width: 40px;
+                height: 40px;
+                margin-right: 15px;
+                border-radius: 50%;
+            }
+
         .social-container {
             background-color: white;
             border-radius: 20px;
@@ -121,12 +130,14 @@
             box-sizing: border-box;
             margin: 0 0 16px 0;
         }
+
         .social-links {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             gap: 20px;
         }
+
         .social-link {
             display: flex;
             align-items: center;
@@ -138,14 +149,17 @@
             font-weight: 600;
             transition: background-color 0.3s ease;
         }
-        .social-link img {
-            width: 30px;
-            height: 30px;
-            margin-right: 10px;
-        }
-        .social-link:hover {
-            background-color: #dbeafe;
-        }
+
+            .social-link img {
+                width: 30px;
+                height: 30px;
+                margin-right: 10px;
+            }
+
+            .social-link:hover {
+                background-color: #dbeafe;
+            }
+
         .schedule-container {
             background-color: white;
             border-radius: 20px;
@@ -157,144 +171,175 @@
             margin-bottom: 16px;
             padding-bottom: 28px;
         }
-        .schedule-container h1 {
-            font-size: 26px;
-            color: #161616;
-            margin-bottom: 25px;
-        }
+
+            .schedule-container h1 {
+                font-size: 26px;
+                color: #161616;
+                margin-bottom: 25px;
+            }
+
         .event {
             display: flex;
             align-items: center;
             margin-bottom: 20px;
         }
-        .event img {
-            border-radius: 50%;
-            width: 40px;
-            height: 40px;
-            margin-right: 15px;
-        }
+
+            .event img {
+                border-radius: 50%;
+                width: 40px;
+                height: 40px;
+                margin-right: 15px;
+            }
+
         .event-info {
             flex: 1;
         }
-        .event-info h2 {
-            font-size: 18px;
-            margin: 0;
-        }
-        .event-info p {
-            font-size: 14px;
-            margin: 0;
-            color: gray;
-        }
+
+            .event-info h2 {
+                font-size: 18px;
+                margin: 0;
+            }
+
+            .event-info p {
+                font-size: 14px;
+                margin: 0;
+                color: gray;
+            }
+
         .event-date {
             display: flex;
             flex-direction: column;
             align-items: flex-end;
         }
-        .event-date p {
-            font-size: 14px;
-            margin: 0;
-            color: gray;
-        }
+
+            .event-date p {
+                font-size: 14px;
+                margin: 0;
+                color: gray;
+            }
+
         .status {
             border: none;
             border-radius: 90px;
             padding: 5px 10px;
             font-size: 12px;
         }
+
         .attended {
             background-color: #dcfce7;
             color: #15803d;
         }
+
         .confirmed {
             background-color: #dbeafe;
             color: #144afc;
         }
+
         .planning {
             background-color: #fef08a;
             color: #854d0e;
         }
+
         .bottom-text h1 {
             font-size: 16px;
             color: #ffffff;
             margin-bottom: 15px;
             align-items: center;
         }
-     @media (max-width: 700px) {
-        .portrait-container {
-            position: relative;
-            width: 100%;
-            max-width: 100%;
-            aspect-ratio: 4546 / 2843;
-            background-size: contain;
-            background-position: center center;
-            background-repeat: no-repeat;
-            overflow: hidden;
-            padding-bottom: 18px;
-            box-sizing: border-box;
-        }
 
-        .portrait-container::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            border-radius: inherit;
-            background-image: inherit;
-            background-size: inherit;
-            background-position: inherit;
-            background-repeat: inherit;
-            filter: blur(2px);
-            z-index: 0;
-        }
-        .bio-container {
-            max-width: 100%;
-            padding: 16px;
-            padding-bottom: 22px;
-        }
-
-            .bio-container h1 {
-                font-size: 20px;
-                margin-bottom: 10px;
+        @media (max-width: 700px) {
+            body {
+                background-attachment: scroll;
             }
 
-            .bio-container p {
-                font-size: 14px;
-                line-height: 1.5;
-            }
-            .portrait-container > * {
+            .portrait-container {
                 position: relative;
-                z-index: 1;
+                width: 100%;
+                max-width: 100%;
+                aspect-ratio: 4546 / 2843;
+                background-size: contain;
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-color: transparent;
+                overflow: hidden;
+                padding-bottom: 18px;
+                box-sizing: border-box;
+                isolation: isolate;
             }
+
+                .portrait-container::before {
+                    display: none;
+                }
+
+                .portrait-container::after {
+                    content: "";
+                    position: absolute;
+                    inset: 0;
+                    border-radius: inherit;
+                    background: linear-gradient( to top, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0) );
+                    z-index: 0;
+                    pointer-events: none;
+                }
+
+                .portrait-container > * {
+                    position: relative;
+                    z-index: 1;
+                }
+
+            .portrait-name {
+                font-size: 38px;
+                margin-left: 14px;
+                margin-top: 40px;
+                margin-bottom: -12px;
+            }
+
+            .portrait-details {
+                margin-left: 14px;
+                font-size: 14px;
+                padding: 4px 8px;
+            }
+
             .social-link {
                 padding: 8px 16px;
             }
-            .social-link img {
-                width: 24px;
-                height: 24px;
-            }
+
+                .social-link img {
+                    width: 24px;
+                    height: 24px;
+                }
+
             .schedule-container h1 {
                 font-size: 20px;
             }
+
             .event-info h2 {
                 font-size: 14px;
             }
+
             .event-date p,
             .event-info p {
                 font-size: 12px;
             }
+
             .attended,
             .confirmed,
             .planning {
                 font-size: 10px;
                 padding: 4px 8px;
             }
-            .planning-container h1 {
+
+            .planning-container h1,
+            .bio-container h1 {
                 font-size: 20px;
             }
+
             .planning-container h2 {
                 font-size: 14px;
+            }
+
+            .bio-container p {
+                font-size: 14px;
+                line-height: 1.5;
             }
         }
     </style>
