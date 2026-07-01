@@ -248,10 +248,6 @@
         }
 
         @media (max-width: 700px) {
-            body {
-                background-attachment: scroll;
-            }
-
             .portrait-container {
                 position: relative;
                 width: 100%;
@@ -260,43 +256,46 @@
                 background-size: contain;
                 background-position: center center;
                 background-repeat: no-repeat;
-                background-color: transparent;
                 overflow: hidden;
                 padding-bottom: 18px;
                 box-sizing: border-box;
-                isolation: isolate;
             }
 
                 .portrait-container::before {
-                    display: none;
-                }
-
-                .portrait-container::after {
                     content: "";
                     position: absolute;
-                    inset: 0;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
                     border-radius: inherit;
-                    background: linear-gradient( to top, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0) );
+                    background-image: inherit;
+                    background-size: inherit;
+                    background-position: inherit;
+                    background-repeat: inherit;
+                    filter: blur(2px);
                     z-index: 0;
-                    pointer-events: none;
                 }
 
-                .portrait-container > * {
-                    position: relative;
-                    z-index: 1;
-                }
-
-            .portrait-name {
-                font-size: 38px;
-                margin-left: 14px;
-                margin-top: 40px;
-                margin-bottom: -12px;
+            .bio-container {
+                max-width: 100%;
+                padding: 16px;
+                padding-bottom: 22px;
             }
 
-            .portrait-details {
-                margin-left: 14px;
-                font-size: 14px;
-                padding: 4px 8px;
+                .bio-container h1 {
+                    font-size: 20px;
+                    margin-bottom: 10px;
+                }
+
+                .bio-container p {
+                    font-size: 14px;
+                    line-height: 1.5;
+                }
+
+            .portrait-container > * {
+                position: relative;
+                z-index: 1;
             }
 
             .social-link {
@@ -328,18 +327,12 @@
                 padding: 4px 8px;
             }
 
-            .planning-container h1,
-            .bio-container h1 {
+            .planning-container h1 {
                 font-size: 20px;
             }
 
             .planning-container h2 {
                 font-size: 14px;
-            }
-
-            .bio-container p {
-                font-size: 14px;
-                line-height: 1.5;
             }
         }
     </style>
