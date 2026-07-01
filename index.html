@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -28,28 +28,31 @@
         }
         .portrait-container {
             border-radius: 20px;
-            background-image: url(astrollama.jpg);
-            background-size: cover;
+            background-image: url(nakedastro.jpeg);
+            background-size: contain;
             background-origin: border-box;
             background-repeat: no-repeat;
-            background-position: right center;
+            background-position: center center;
+            background-color: rgba(0, 0, 0, 0.15);
             margin-top: 16px;
             margin-bottom: 16px;
             width: 100%;
-            max-width: 800px;
+            max-width: 900px;
+            aspect-ratio: 4546 / 2843;
             display: flex;
-            display: block;
-            padding-bottom: 28px;
             flex-direction: column;
             justify-content: flex-end;
+            padding-bottom: 28px;
+            box-sizing: border-box;
+            overflow: hidden;
         }
         .portrait-name {
             font-size: 62px;
             color: white;
             margin-left: 16px;
             margin-top: 65px;
+            margin-bottom: -24px;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-            margin-bottom: -4px;
         }
         .portrait-details {
             color: white;
@@ -57,7 +60,32 @@
             background-color: rgba (255, 255, 255, 0.85);
             padding: 8px;
             display: inline-block;
-            font-size: 18px;
+            font-size: 20px;
+        }
+        .bio-container {
+            background-color: #d7e2ee;
+            border: 1px solid rgba(30, 58, 95, 0.12);
+            border-radius: 20px;
+            box-shadow: 0 8px 18px rgba(15, 23, 42, 0.12);
+            width: 100%;
+            max-width: 800px;
+            padding: 20px;
+            box-sizing: border-box;
+            margin-bottom: 16px;
+            padding-bottom: 28px;
+        }
+
+        .bio-container h1 {
+            font-size: 24px;
+            color: #1e3a5f;
+            margin-bottom: 15px;
+        }
+
+        .bio-container p {
+            font-size: 16px;
+            color: #2458a6;
+            line-height: 1.6;
+            margin: 0;
         }
         .big-button {
             display: flex;
@@ -191,24 +219,49 @@
             margin-bottom: 15px;
             align-items: center;
         }
-        @media (max-width: 700px) {
-            .portrait-container {
-                position: relative;
+     @media (max-width: 700px) {
+        .portrait-container {
+            position: relative;
+            width: 100%;
+            max-width: 100%;
+            aspect-ratio: 4546 / 2843;
+            background-size: contain;
+            background-position: center center;
+            background-repeat: no-repeat;
+            overflow: hidden;
+            padding-bottom: 18px;
+            box-sizing: border-box;
+        }
+
+        .portrait-container::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border-radius: inherit;
+            background-image: inherit;
+            background-size: inherit;
+            background-position: inherit;
+            background-repeat: inherit;
+            filter: blur(2px);
+            z-index: 0;
+        }
+        .bio-container {
+            max-width: 100%;
+            padding: 16px;
+            padding-bottom: 22px;
+        }
+
+            .bio-container h1 {
+                font-size: 20px;
+                margin-bottom: 10px;
             }
-            .portrait-container::before {
-                content: "";
-                position: absolute;
-                top: 0;
-                left: 0;
-                right: 0;
-                bottom: 0;
-                border-radius: inherit;
-                background-image: inherit;
-                background-size: inherit;
-                background-position: inherit;
-                background-repeat: inherit;
-                filter: blur(2px);
-                z-index: 0;
+
+            .bio-container p {
+                font-size: 14px;
+                line-height: 1.5;
             }
             .portrait-container > * {
                 position: relative;
@@ -250,8 +303,16 @@
     <div class="portrait-container" id="portrait">
         <div>
             <h1 class="portrait-name" id="con-name">ASTRO</h1>
-            <p class="portrait-details">25 | SysAdmin | Fairview, CA</p>
+            <p class="portrait-details">26 | Fremont, CA</p>
         </div>
+    </div>
+
+    <div class="bio-container">
+        <h1>A Fat Tubby Naked Tiger</h1>
+        <p>
+            Meow! This chubby cat is a nudist and a nerd. He loves his catnip and relaxed fluffs. Works as a SysAdmin and likes to nerd about tech or video games.
+            Loves his fellow big chonky boys and chonk boy apperciators. Give this cat a good belly rub and remind him how fat he is. 
+        </p>
     </div>
 
     <div class="social-container">
@@ -270,11 +331,6 @@
             </a>
         </div>
     </div>
-
-    <a class="big-button" href="cons.html">
-        <img src="dfbu88z-5d4b6086-ef65-4aa7-b4dd-938a6b048b54.png" alt="Con Schedule">
-        Con Schedule
-    </a>
 
     <div class="schedule-container">
         <h1>2026 Convention Schedule</h1>
@@ -345,6 +401,11 @@
             </div>
         </div>
     </div>
+
+    <a class="big-button" href="cons.html">
+        <img src="dfbu88z-5d4b6086-ef65-4aa7-b4dd-938a6b048b54.png" alt="Previous Conventions">
+        Past Conventions
+    </a>
 
     <div class="bottom-text">
         <h1>AstroMedia LLC</h1>
